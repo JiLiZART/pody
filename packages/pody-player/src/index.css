@@ -1,0 +1,163 @@
+
+
+.themeLight {
+    color: #111;
+    font-family: sans-serif;
+    padding: 4px 0;
+}
+
+.info,
+.bars {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info {
+    line-height: 1rem;
+    height: 1rem;
+}
+
+.track-slide:before,
+.track-slide__loading:before,
+.track-slide__loaded:before,
+.track-slide__progress:before,
+.handler:before,
+.volume-slide:before,
+.volume-slide__current:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 2px;
+    transform: translateY(-1px);
+}
+
+.info-track,
+.track-slide {
+    flex: 1;
+    position: relative;
+}
+
+.info-track,
+.info-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-title__button {
+    width: 1rem;
+    height: 1rem;
+    background: #ccc;
+    margin-right: 0.5rem;
+}
+
+.track-slide {
+    border-radius: 2px;
+    height: 12px;
+}
+
+.track-slide:before {
+    background-color: #e7e7e7;
+}
+
+.track-slide__loading:before {
+    background-color: #e7e7e7;
+}
+
+.info-time,
+.info-volume,
+.volume-slide {
+    margin-left: auto;
+    position: relative;
+}
+
+.info-volume,
+.volume-slide {
+    width: 100px;
+    margin-left: 0.5rem;
+}
+
+.volume-slide {
+    height: 12px;
+}
+
+.speed,
+.info-volume,
+.info-time {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.speed {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 12px;
+    line-height: 12px;
+    font-size: 11px;
+}
+
+.info-time__current {
+    margin-right: 0.65em;
+}
+
+.track-slide__loading,
+.track-slide__progress,
+.track-slide__loaded,
+.volume-slide__current {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+}
+
+.track-slide__loading {
+    width: 100%;
+}
+
+.track-slide__loaded:before {
+    background-color: #b8b8b8;
+}
+
+.track-slide__progress:before {
+    background-color: #585858;
+}
+
+.volume-slide:before {
+    background-color: #e7e7e7;
+}
+
+.volume-slide__current:before {
+    background-color: #b8b8b8;
+}
+
+.handler {
+    position: absolute;
+    top: 0;
+    right: -6px;
+    height: 12px;
+    width: 12px;
+}
+
+.handler:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #b8b8b8;
+    opacity: 1;
+}
+
+.volume-slide__current:hover .handler {
+    opacity: 1;
+}

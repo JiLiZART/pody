@@ -1,0 +1,58 @@
+
+.control {
+    background: 0 0;
+    border: 0;
+    border-radius: .1875rem;
+    color: inherit;
+    cursor: pointer;
+    flex-shrink: 0;
+    overflow: visible;
+    padding: .25rem;
+    position: relative;
+    transition: all .3s ease;
+    opacity: .6;
+    outline: none;
+    font-size: 0.75rem;
+}
+
+.block.control {
+    display: inline-block;
+    width: 100%;
+}
+
+.textAlignRight.control {
+    text-align: right;
+}
+
+.control[disabled] {
+    cursor: default;
+}
+
+.control:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: .1875rem;
+}
+
+.control:focus:before {
+    background-color: currentColor;
+    opacity: .1;
+}
+
+.control:not([disabled]):hover {
+    opacity: 1;
+}
+
+.srOnly {
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    border: 0 !important;
+    height: 1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}

@@ -1,0 +1,67 @@
+
+.progress,
+.buffer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+}
+
+.slide:before,
+.progress:before,
+.buffer:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 0.125rem;
+    border-radius: 0.125rem;
+
+    transform: translateY(-1px);
+}
+
+.slide {
+    display: flex;
+    flex: 1;
+    position: relative;
+
+    border-radius: 0.125rem;
+    height: 0.75rem;
+}
+
+.slide:before,
+.progress:before,
+.buffer:before  {
+    background-color: currentColor;
+}
+
+.slide:before {
+    opacity: .2;
+}
+
+.progress:before {
+    opacity: .3;
+}
+
+.buffer:before {
+    opacity: .1;
+}
+
+.progress {
+
+}
+
+.buffer {
+    -webkit-appearance: none;
+    background: 0 0;
+    border: 0;
+    border-radius: 0.125rem;
+    height: 0.375rem;
+    left: 0;
+    margin-top: -0.1875rem;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+}

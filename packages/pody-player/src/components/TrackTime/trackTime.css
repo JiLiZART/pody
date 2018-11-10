@@ -1,0 +1,15 @@
+
+.time {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.total {
+
+}
+
+.current {
+    margin-right: 0.65rem;
+}

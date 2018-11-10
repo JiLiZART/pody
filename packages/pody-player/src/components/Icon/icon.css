@@ -1,0 +1,14 @@
+
+.icon {
+    color: inherit;
+    height: 1rem;
+    width: 1rem;
+}
+
+.icon svg {
+    display: block;
+    fill: currentColor;
+    height: 1rem;
+    width: 1rem;
+    pointer-events: none;
+}

@@ -1,0 +1,12 @@
+{  
+  "lerna": "2.11.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "packages": [
+    "packages/pody-audio",
+    "packages/pody-hyperapp"
+  ],
+  "version": "0.1.0"
+}
