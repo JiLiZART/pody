@@ -1,11 +1,12 @@
 import {h} from "hyperapp"
 
 import styles from './trackTime.css'
+import {format} from "../../helpers/time";
 
-const TrackTime = ({total, current}) => (
+const TrackTime = () => (state, actions) => (
     <div class={styles.time}>
-        <div class={styles.current}>{current}</div>
-        <div class={styles.total}>{total}</div>
+        <div class={styles.current}>{format(state.currentTime)}</div>
+        <div class={styles.total}>{format(state.duration)}</div>
     </div>
 );
 

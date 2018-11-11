@@ -14,3 +14,11 @@ export function on(eventName, callback, container = document) {
 export function off(eventName, callback, container = document) {
     return container.removeEventListener(eventName, callback)
 }
+
+export function isElementMatch(targetEl, elems, callback) {
+    elems.forEach(el => {
+        if (el === targetEl) {
+            callback()
+        }
+    })
+}

@@ -7,11 +7,11 @@ import styles from './speedControl.css'
 const SpeedControl = () => (state, actions) => (
     <div class={styles.control}>
         <Control
-            text={`x${state.speed}`}
+            text={`x${state.playbackRate}`}
             isBlock
             textAlignRight
             disabled={!state.playing}
-            onClick={() => actions.speed(speedStates[state.speed])}
+            onClick={() => actions.playbackRate(speedStates[state.playbackRate])}
         />
     </div>
 );
